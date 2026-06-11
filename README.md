@@ -1,7 +1,7 @@
 
 # springboot-kafka-demo
 
-A hands-on multi-module Spring Boot demo demonstrating an end-to-end Kafka flow: a Wikimedia event producer and a consumer that maps events with MapStruct and persists them via Spring Data JPA. Designed as a learning playground for event-driven integration, mapping best-practices, and troubleshooting.
+A hands-on multi-module Spring Boot demo demonstrating an end-to-end Kafka flow: a Wikimedia event producer and a consumer that maps events and persists them via Spring Data JPA. Designed as a learning playground for event-driven integration, mapping best practices, and troubleshooting.
 
 ## Contents
 - `kafka-producer-wikimedia/` — Kafka producer that publishes Wikimedia events using `KafkaTemplate`.
@@ -9,7 +9,7 @@ A hands-on multi-module Spring Boot demo demonstrating an end-to-end Kafka flow:
 - Root `pom.xml` — multi-module Maven build that lists both modules.
 
 ## Tech stack
-Java 21 \| Spring Boot (root parent 4.x) \| Spring Kafka \| Spring Data JPA \| MapStruct \| Maven \| Lombok \| H2/MySQL
+Java 21 \| Spring Boot (root parent 4.x) \| Spring Kafka \| Spring Data JPA \| Maven \| Lombok \| MySQL
 
 ## Prerequisites
 - Java JDK 21 (matching `pom.xml`)
