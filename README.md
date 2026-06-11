@@ -46,15 +46,6 @@ Java 21 \| Spring Boot (root parent 4.x) \| Spring Kafka \| Spring Data JPA \| M
    - Consumer logs show "Event message received" and mapping logs.
    - DB records appear in H2 console or configured MySQL.
 
-## Configuration
-- Each module has `application.properties`.
-- Important properties that must match across modules:
-  - `spring.kafka.bootstrap-servers`
-  - `spring.kafka.topic.name`
-  - `spring.kafka.consumer.group-id`
-- Datasource properties for `kafka-consumer-database`:
-  - `spring.datasource.url`, `spring.datasource.username`, `spring.datasource.password`, `spring.datasource.driver-class-name`
-
 ## Development conventions (repo-specific)
 - Package root: `com.practice.[modulename]`
 - Constructor-based DI preferred
